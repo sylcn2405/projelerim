@@ -50,6 +50,11 @@ header nav a {
   font-weight: 500;
   transition: color 0.3s ease;
 }
+nav a.menu-link.active {
+  color: #00B7B2;
+
+  border-bottom: 2px solid #00B7B2;
+}
 
 header nav a::after {
   content: '';
@@ -169,6 +174,12 @@ header nav a:hover::after {
 .hero-img img:active {
   transform: scale(1.1);
 }
+
+
+
+
+
+
 footer {
   text-align: center;
   padding: 20px;
@@ -209,207 +220,148 @@ footer {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-
-/* !kampanyalar */
-
-.kampanyalar {
-  margin-top: 10px;
-  padding: 60px 50px;
-  margin-left: 100px;
-  margin-right: 100px;
+/* === UYGULAMA ÖZELLİKLERİ === */
+.ozellikler {
+  padding: 80px 60px;
+  background-color: #f7fdfd;
 }
 
-.bolum-baslik {
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1000px;
-  color: #00b7b2;
-  font-size: 50px;
-}
-
-.kampanya-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
-
-.kampanya-kart {
-  background-color: white;
+.ozellik-kart {
+  flex: 1 1 250px;
+  background: white;
+  padding: 24px;
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-  overflow: hidden;
-  flex: 0 0 calc(33.333% - 30px); /* her satıra 3 kart sığacak şekilde */
-  max-width: 350px;
-  min-width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
   transition: transform 0.2s ease;
 }
 
-.kampanya-kart:hover {
-  transform: translateY(-5px);
+.ozellik-kart:hover {
+  transform: scale(1.05);
 }
 
-.kampanya-kart img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+.ozellik-kart i {
+  font-size: 40px;
+  color: #00b7b2;
+  margin-bottom: 10px;
 }
 
-.kampanya-kart h3 {
-  font-size: 18px;
-  margin: 16px;
+/* === NASIL ÇALIŞIR === */
+.nasil-calisir {
+  padding: 80px 60px;
+  background-color: #ffffff;
+}
+
+.nasil-calisir iframe {
+
+  max-width: 800px;
+  border: 0;
+  border-radius: 12px;
+  display: block;
+  margin: 30px auto 0;
+}
+
+.nasil-calisir img {
+  width: 80px;
+  margin-bottom: 16px;
+}
+
+.nasil-calisir h4 {
+  margin-bottom: 10px;
   color: #00b7b2;
 }
 
-.kampanya-kart p {
-  font-size: 15px;
-  margin: 0 16px 16px;
-  color: #555;
-  line-height: 1.5;
-}
-
-/* !hakkımızda */
-
-.hakkimizda {
-  margin-top: 10px;
-  padding: 60px 50px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.hakkimizda-aciklama {
-  font-size: 17px;
+.nasil-calisir p {
   color: #444;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: justify;
 }
 
-.hakkimizda-kartlar {
+/* === YORUMLAR === */
+.yorumlar {
+  padding: 80px 60px;
+  background-color: #f0faf9;
+  text-align: center;
+}
+
+.yorumlar-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 40px;
   margin-top: 40px;
-  margin-left: 100px;
-  flex-wrap: wrap;
 }
 
-.hakkimizda-kart {
-  background-color: white;
-  border-radius: 12px;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+.yorum-kart {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background: linear-gradient(145deg, #ffffff, #f3fefe);
+  border: 1px solid #e0f7f7;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
   transition: transform 0.3s ease;
 }
 
-.hakkimizda-kart:hover {
-  transform: scale(1.05);
+.yorum-kart:hover {
+  transform: translateY(-5px);
 }
 
-.hakkimizda-kart i {
-  font-size: 36px;
-  color: #00b7b2;
-  margin-bottom: 10px;
-}
-
-.hakkimizda-kart h4 {
-  margin-bottom: 10px;
-  color: #00b7b2;
-}
-
-/* !iletişim css */
-.iletisim {
-  padding: 60px 20px;
-  margin: 30px 100px 0 100px;
-  border-radius: 12px;
-}
-.baslik{
-   color: #00b7b2;
-   font-size: 50px;
-   display: flex;
-margin-top: 10px ;
-   justify-content: center;
-}
-.iletisim-form {
-  width: 100%;
-  max-width: 800px; 
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.iletisim-bilgilendirme {
-  background-color: #fff;
-  border-left: 5px solid #00b7b2;
-  padding: 16px;
-  border-radius: 8px;
-  margin-bottom: 30px;
-  margin-left: 80px;
+.yorum-kart p {
   font-size: 16px;
-  color: #333;
+  color: #444;
+  margin-bottom: 16px;
+  line-height: 1.6;
 }
 
-  .bilgilendirme{
-      margin-left: 50px;
-    font-size: 16px;
-    color: #333;
-  }
-
-
-.iletisim-form label {
+.yorum-kart strong {
+  color: #00b7b2;
   font-weight: 600;
-  margin-bottom: 4px;
-  color: #333;
+  font-size: 15px;
 }
 
-.iletisim-form span {
-  color: red;
+/* === SIKÇA SORULAN SORULAR === */
+.sss {
+  padding: 80px 60px;
+  background-color: #ffffff;
 }
 
-.iletisim-form input,
-.iletisim-form textarea {
-  width: 100%;
-  padding: 14px 18px;
+.sss details {
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.sss details[open] summary + * {
+  animation: fadeDown 0.4s ease forwards;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sss summary {
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  resize: none;
-  font-family: "Segoe UI", sans-serif;
-  box-sizing: border-box;
-}
-
-.iletisim-form input:focus,
-.iletisim-form textarea:focus {
-  outline: none;
-  border-color: #00b7b2;
-  box-shadow: 0 0 0 2px rgba(0, 183, 178, 0.2);
-}
-
-.iletisim-form .ileti-btn {
-  background-color: #00b7b2;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
+  font-weight: 600;
+  color: #00b7b2;
   cursor: pointer;
-  transition: all 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  justify-content: center;
 }
 
-.iletisim-form .ileti-btn:hover {
-  background-color: #009d99;
-  transform: scale(1.05);
+.sss p {
+  margin-top: 10px;
+  color: #444;
 }
+
+
 
 /* !footer */
 .footer {

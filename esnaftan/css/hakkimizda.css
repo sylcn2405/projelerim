@@ -1,0 +1,54 @@
+
+/* !hakkımızda */
+
+.hakkimizda {
+  margin-top: 10px;
+  padding: 60px 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.hakkimizda-aciklama {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.hakkimizda-kartlar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  margin-left: 100px;
+  flex-wrap: wrap;
+}
+
+.hakkimizda-kart {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.hakkimizda-kart:hover {
+  transform: scale(1.05);
+}
+
+.hakkimizda-kart i {
+  font-size: 36px;
+  color: #00b7b2;
+  margin-bottom: 10px;
+}
+
+.hakkimizda-kart h4 {
+  margin-bottom: 10px;
+  color: #00b7b2;
+}

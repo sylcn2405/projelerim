@@ -1,0 +1,89 @@
+
+
+/* !iletişim css */
+.iletisim {
+  padding: 60px 20px;
+  margin: 30px 100px 0 100px;
+  border-radius: 12px;
+}
+.baslik{
+   color: #00b7b2;
+   font-size: 50px;
+   display: flex;
+margin-top: 10px ;
+   justify-content: center;
+}
+.iletisim-form {
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.iletisim-bilgilendirme {
+  background-color: #fff;
+  border-left: 5px solid #00b7b2;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  margin-left: 80px;
+  font-size: 16px;
+  color: #333;
+}
+
+  .bilgilendirme{
+      margin-left: 50px;
+    font-size: 16px;
+    color: #333;
+  }
+
+
+.iletisim-form label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.iletisim-form span {
+  color: red;
+}
+
+.iletisim-form input,
+.iletisim-form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  font-family: "Segoe UI", sans-serif;
+  box-sizing: border-box;
+}
+
+.iletisim-form input:focus,
+.iletisim-form textarea:focus {
+  outline: none;
+  border-color: #00b7b2;
+  box-shadow: 0 0 0 2px rgba(0, 183, 178, 0.2);
+}
+
+.iletisim-form .ileti-btn {
+  background-color: #00b7b2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.iletisim-form .ileti-btn:hover {
+  background-color: #009d99;
+  transform: scale(1.05);
+}
